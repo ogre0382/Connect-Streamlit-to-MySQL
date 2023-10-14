@@ -3,11 +3,10 @@
 import streamlit as st
 
 # Initialize connection.
-@st.cache_data
 conn = st.experimental_connection('mysql', type='sql')
 
 # Perform query.
-df = conn.query('SELECT * from mytable;', ttl=600)
+df = conn.query('SELECT * from mytable;')
 
 # Print results.
 for row in df.itertuples():
