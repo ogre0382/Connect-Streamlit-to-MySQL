@@ -6,7 +6,7 @@ import streamlit as st
 conn = st.experimental_connection('mysql', type='sql')
 
 # Perform query.
-df = conn.query('SELECT * from mytable;', ttl=0)
+df = conn.query('SELECT * from mytable;', ttl=600)
 
 # Print results.
 for row in df.itertuples():
