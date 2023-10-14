@@ -3,6 +3,7 @@
 import streamlit as st
 
 # Initialize connection.
+@st.cache_data
 conn = st.experimental_connection('mysql', type='sql')
 
 # Perform query.
