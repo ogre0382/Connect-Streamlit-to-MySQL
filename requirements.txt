@@ -1,0 +1,4 @@
+# requirements.txt
+mysqlclient
+SQLAlchemy
+streamlit
