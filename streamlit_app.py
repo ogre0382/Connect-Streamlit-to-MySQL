@@ -3,7 +3,11 @@
 import streamlit as st
 
 # Initialize connection.
-conn = st.experimental_connection('mysql', type='sql')
+conn = st.experimental_connection(
+    "local_db",
+    type="sql",
+    url="mysql://root:ogre0382@localhost:3306/pets"
+)
 
 # Perform query.
 df = conn.query('SELECT * from mytable;')
