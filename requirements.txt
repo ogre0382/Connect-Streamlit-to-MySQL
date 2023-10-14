@@ -1,6 +1,4 @@
 # requirements.txt
 streamlit
 SQLAlchemy
-mysqlclient
-
-
+mysqlclient==2.1.0
